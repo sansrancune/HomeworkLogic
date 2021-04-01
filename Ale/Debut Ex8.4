@@ -1,0 +1,39 @@
+Debut Ex8.4
+
+Debut declaration variables
+
+var somme: N<-1
+var x: N<-0
+var nombre: N<-2
+const taille: N<-100          // réduire ?
+var parfait:N[taille]
+var ind: N<-1
+var i: N<-1
+Fin declaration variables
+
+
+Tant que ind =/= 101
+
+Pour x allant de 2 a nombre/2 a pas de 1
+
+Si nombre%x = 0
+	alors somme <- somme+x
+
+x suivant
+Si nombre = somme   // selon wikipedia 1 n'est pas un nombre parfait et ne sera donc pas compté en tant que tel ici
+	alors parfait[ind] <- nombre
+	ind<-ind+1
+fin si
+
+nombre <- nombre+1
+
+fin tant que
+
+Pour i allant de 1 a taille 
+
+afficher parfait[i]+" est un nombre parfait"
+
+i suivant
+
+
+Fin Ex8.4

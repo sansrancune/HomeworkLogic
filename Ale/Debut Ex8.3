@@ -1,0 +1,37 @@
+Debut Ex8.3
+
+Debut declaration variables
+
+var somme: N<-1
+var x: N<-0
+var nombre: N<-0
+const taille: N<-100          // réduire ?
+var parfait:N[taille]
+var ind: N<-1
+var i: N<-1
+Fin declaration variables
+
+
+
+Pour nombre allant de 1 a 100 a pas de 1
+Pour x allant de 2 a nombre/2 a pas de 1
+
+Si nombre%x = 0
+	alors somme <- somme+x
+
+x suivant
+Si nombre = somme   // selon wikipedia 1 n'est pas un nombre parfait et ne sera donc pas compté en tant que tel ici
+	alors parfait[ind] <- nombre
+	ind<-ind+1
+
+nombre suivant
+
+Pour i allant de 1 a taille  // Si 1 était un nombre parfait il suffirait de hard coder afficher 1 en tant que tel
+
+Si parfait[i] =/= 0 
+	alors afficher parfait[i]+" est un nombre parfait"
+
+i suivant
+
+
+Fin Ex8.3
