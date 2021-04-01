@@ -2,36 +2,43 @@ Debut Ex8.4
 
 Debut declaration variables
 
-var somme: N<-1
 var x: N<-0
 var nombre: N<-2
-const taille: N<-100          // réduire ?
-var parfait:N[taille]
+const taille: N<-100       
+var tabpremier:N[taille]
 var ind: N<-1
 var i: N<-1
+var premier: B<- faux
 Fin declaration variables
 
 
 Tant que ind =/= 101
 
-Pour x allant de 2 a nombre/2 a pas de 1
+premier=vrai
+
+Tant que premier=vrai
+
+Pour x allant de 2 a (nombre/2)-1 a pas de 1
 
 Si nombre%x = 0
-	alors somme <- somme+x
-
-x suivant
-Si nombre = somme   // selon wikipedia 1 n'est pas un nombre parfait et ne sera donc pas compté en tant que tel ici
-	alors parfait[ind] <- nombre
+	alors premier=faux
+	Sinon tabpremier[ind] <-nombre
 	ind<-ind+1
 fin si
+
+x suivant
+
+fin tant que
 
 nombre <- nombre+1
 
 fin tant que
 
+
+Afficher " Les 100 premiers nombres premiers sont : "
 Pour i allant de 1 a taille 
 
-afficher parfait[i]+" est un nombre parfait"
+afficher tabpremier[i]
 
 i suivant
 

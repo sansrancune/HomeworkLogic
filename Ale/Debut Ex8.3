@@ -16,6 +16,7 @@ Fin declaration variables
 Pour nombre allant de 1 a 100 a pas de 1
 Pour x allant de 2 a nombre/2 a pas de 1
 
+somme<-1
 Si nombre%x = 0
 	alors somme <- somme+x
 
@@ -26,10 +27,9 @@ Si nombre = somme   // selon wikipedia 1 n'est pas un nombre parfait et ne sera 
 
 nombre suivant
 
-Pour i allant de 1 a taille  // Si 1 était un nombre parfait il suffirait de hard coder afficher 1 en tant que tel
+Pour i allant de 1 a index-1  // Si 1 était un nombre parfait il suffirait de hard coder afficher 1 en tant que tel
 
-Si parfait[i] =/= 0 
-	alors afficher parfait[i]+" est un nombre parfait"
+alors afficher parfait[i]+" est un nombre parfait"
 
 i suivant
 
