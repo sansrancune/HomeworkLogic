@@ -1,0 +1,34 @@
+Debut Ex9.6
+
+Debut declaration variables
+var taille: N<-1
+var matrice[taille][taille]
+var i: N<-1
+var j: N<-1
+var reste: N<-0
+var x: N<-0
+var long: N<-0
+var high: N<-0
+fin declaration variables
+
+Afficher " saisir taille de la matrice "
+saisir taille
+
+Si long>high
+	alors x<-long div high
+	reste<-long%high
+	sinon x<- high div long
+	reste<- high%long
+fin si
+
+Pour i allant de 1 a taille-1 a pas de 1 
+Pour j allant de 1 a x a pas de 1 // probleme reste toujours au début du graph
+matrice[i][j]<-1
+j suivant
+i suivant
+
+Pour j allant de long-reste a long a pas de 1
+matrice[high][j]<- 1
+j suivant
+
+Fin Ex9.6

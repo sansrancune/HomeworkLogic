@@ -1,0 +1,61 @@
+Debut Ex9.4
+
+Debut declaration variables
+var magique: B<-faux
+var sommeref: N<-0
+var somme: N<-0
+var taille: N<-1
+var matrice[taille][taille]
+var i: N<-1
+var j: N<-1
+fin declaration variables
+
+Afficher " saisir taille de la matrice "
+saisir taille
+
+magique=vrai
+tant que magique=vrai
+
+Pour i allant de 1 à taille par pas de 1 // diagonale gauche à droite
+sommeref<- sommeref+matrice[i][i]
+i suivant
+
+Pour i allant de taille à 1 par pas de -1 // diagonale droite à gauche
+Pour j allant de 1 à taille par pas de 1
+Si i+j = taille+1
+	alors somme<-somme + matrice[i][j]
+j suivant
+i suivant
+
+Si sommeref=/=somme // premier check
+	alors magique=faux
+fin si
+
+Pour i allant de 1 à taille à pas de 1 // lignes
+somme <-0
+Pour j allant de 1 à taille à pas de 1
+somme <- somme + matrice[i][j]
+j suivant
+Si sommeref=/=somme 
+	alors magique=faux
+fin si
+i suivant
+
+Pour i allant de 1 à taille à pas de 1 // colonnes
+somme <-0
+Pour j allant de 1 à taille à pas de 1
+somme <- somme + matrice[j][i]
+j suivant
+Si sommeref=/=somme 
+	alors magique=faux
+fin si
+i suivant
+
+fin tant que
+
+Si magique=vrai
+	alors afficher " Ceci est un carré magique "
+	sinon afficher " Ceci n'est pas un carré magique"
+fin si
+
+Fin Ex9.4

@@ -1,0 +1,24 @@
+Debut Ex9.1
+
+Declaration variables locales
+var taille: N<-1
+var matrice[taille][taille]
+var i: N<-1
+var j: N<-1
+fin declaration variables // quand carré a dim impair, intersection
+
+Afficher " saisir taille de la matrice "
+saisir taille
+
+Pour i allant de 1 à taille par pas de 1
+matrice[i][i]<- 1
+i suivant
+
+Pour i allant de taille à 1 par pas de -1
+Pour j allant de 1 à taille par pas de 1
+Si i+j = taille+1
+	alors matrice[i][j]<-2
+j suivant
+i suivant
+
+fin Ex9.1

@@ -1,0 +1,33 @@
+Debut Ex9.5
+
+Debut declaration variables
+var taille: N<-1
+var matrice[taille][taille]
+var i: N<-1
+var j: N<-1
+var y: N<-0
+var limiteBas: N<-1
+var limiteHaut: N<-0
+fin declaration variables
+
+Afficher " saisir taille de la matrice "
+saisir taille
+limiteHaut<-taille
+
+Pour i allant de 1 a taille par pas de 1  
+Pour j allant de limiteBas a limiteHaut par pas de 1 // limiter la rotation à un quadran
+y<-0
+Si limiteBas =/= limiteHaut
+	alors y<-(taille+1)-j
+	temp <- matrice[i][j]
+	matrice[i][j]<-matrice[y][i]
+	matrice[y][i]<-matrice[y][y]
+	matrice[y][y]<-matrice[i][y]
+	matrice[i][y]<-temp
+fin si
+j suivant
+limiteBas<- limiteBas+1
+limiteHaut<- limiteHaut-1
+i suivant
+
+Fin Ex9.5

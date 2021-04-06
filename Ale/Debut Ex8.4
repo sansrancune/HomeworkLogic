@@ -12,18 +12,18 @@ var premier: B<- faux
 Fin declaration variables
 
 
-Tant que ind =/= 101
+Tant que ind =/= 101 // dismiss numbers that we already know
 
-premier=vrai
+Si nombre%2 =/= 0
+	alors premier=vrai
+
 
 Tant que premier=vrai
 
-Pour x allant de 2 a (nombre/2)-1 a pas de 1
+Pour x allant de 3 a (nombre/2)-1 a pas de 2  // tant que
 
 Si nombre%x = 0
 	alors premier=faux
-	Sinon tabpremier[ind] <-nombre
-	ind<-ind+1
 fin si
 
 x suivant
@@ -31,6 +31,9 @@ x suivant
 fin tant que
 
 nombre <- nombre+1
+Si premier= vrai
+	alors tabpremier[ind] <-nombre
+	ind<-ind+1
 
 fin tant que
 
