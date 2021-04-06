@@ -7,28 +7,30 @@ var i: N<-1
 var j: N<-1
 var reste: N<-0
 var x: N<-0
-var long: N<-0
-var high: N<-0
+var length: N<-0
+var height: N<-0
+var pos:<-1
 fin declaration variables
 
 Afficher " saisir taille de la matrice "
 saisir taille
 
-Si long>high
-	alors x<-long div high
-	reste<-long%high
-	sinon x<- high div long
-	reste<- high%long
+Si length>height
+	alors x<-length div height
+	reste<-length%height
+	sinon x<- height div length
+	reste<- height%length
 fin si
 
-Pour i allant de 1 a taille-1 a pas de 1 
-Pour j allant de 1 a x a pas de 1 // probleme reste toujours au début du graph
+Pour i allant de 1 a height-1 a pas de 1 
+Pour j allant de pos a pos+x a pas de 1 
 matrice[i][j]<-1
 j suivant
+pos<-pos+x
 i suivant
 
-Pour j allant de long-reste a long a pas de 1
-matrice[high][j]<- 1
+Pour j allant de length-reste a length a pas de 1
+matrice[height][j]<- 1
 j suivant
 
 Fin Ex9.6
