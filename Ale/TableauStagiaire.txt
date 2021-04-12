@@ -18,7 +18,8 @@ finstrucutre
 Debut tabStagiaire
 
 declaration variables
-var tab[10]: Stagiaire
+var stagiaire: stagiaire
+var tab: stagiaire[10]
 var index: N<-1
 fin declaration variables
 
