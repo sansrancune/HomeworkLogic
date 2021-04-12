@@ -18,7 +18,6 @@ finstrucutre
 Debut tabStagiaire
 
 declaration variables
-var stagiaire: stagiaire
 var tab: stagiaire[10]
 var index: N<-1
 fin declaration variables
@@ -39,7 +38,7 @@ saisir stagiaire.naissance.mois
 afficher "an"
 saisir stagiaire.naissance.an
 tab[index] <- stagiaire
-index <- index - -1
+index <- index + 1
 fin tant que
 
 fin tabStagiaire
