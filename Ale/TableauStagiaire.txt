@@ -1,0 +1,45 @@
+Structure Date
+var jour: N
+var mois: N
+var an: N
+finstructure
+
+Structure Personne
+var nom: T
+var prenom: T
+var naissance: Date
+finstructure
+
+Structure Stagiaire
+var Personne
+var naissance
+finstrucutre
+
+Debut tabStagiaire
+
+declaration variables
+var tab[10]: Stagiaire
+var index: N<-1
+fin declaration variables
+
+Tant que index < 11
+creer date
+creer personne
+creer stagiaire
+Afficher " saisir données du stagiaire "
+afficher "nom"
+saisir stagiaire.personne.nom
+afficher "prenom"
+saisir stagiaire.personne.prenom
+afficher "Date de naissance commençant par le jour"
+saisir stagiaire.naissance.jour
+afficher "mois"
+saisir stagiaire.naissance.jourmois
+afficher "an"
+saisir stagiaire.naissance.jouran
+tab[index] <- stagiaire
+index <- index - -1
+fin tant que
+
+fin tabStagiaire
+

@@ -2,31 +2,29 @@ Debut Ex8.4
 
 Debut declaration variables
 
-var x: N<-0
-var nombre: N<-3
+var nombre: N<-5
 const taille: N<-100       
 var tabPremier:N[taille]
-var ind: N<-2
+var ind: N<-3
 var i: N<-1
 var premier: B<- faux
-var borne: N<-4
+var borne: N<-9
 var indexBorne: N<-1
 Fin declaration variables
 
 
-tabPremier[1]<-2
+tabPremier[1]<-2 
+tabPremier[2]<-3
 
-Tant que ind =/= 101
-
-Tant que premier=vrai
+Tant que ind < 100 et premier
 
 Pour i allant de 1 a indexBorne
+
+premier <- vrai
 
 Si nombre%tabPremier[i] = 0
 	alors premier=faux
 fin si
-
-fin tant que
 
 Si premier= vrai
 	alors tabPremier[ind] <-nombre
@@ -36,7 +34,7 @@ fin si
 nombre <- nombre+2
 
 Si nombre < borne // création de la nouvelle borne et incrémentation de l'index
-	indexBorne<- indexBorne+1 // peut on partir du principe que ne demande pas case vide ?
+	indexBorne<- indexBorne+1 
 	borne <- tabPremier[indexBorne]*tabPremier[indexBorne]
 fin si
 
